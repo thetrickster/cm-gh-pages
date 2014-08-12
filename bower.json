@@ -1,0 +1,25 @@
+{
+  "name": "CM Github Pages Site",
+  "version": "1.0.0",
+  "homepage": "https://github.com/thetrickster/cm-gh-pages",
+  "authors": [
+    "Chris Matthias <chris.matthias@gmail.com>"
+  ],
+  "description": "My github pages site using Jekyll & UIKit",
+  "main": "Gruntfile.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "uikit": "~2.8.0"
+  }
+}

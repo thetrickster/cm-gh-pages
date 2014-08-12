@@ -1,0 +1,25 @@
+{
+  "name": "cm-gh-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thetrickster/cm-gh-pages.git"
+  },
+  "author": "Chris Matthias",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/thetrickster/cm-gh-pages/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-jekyll": "~0.4.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-less": "~0.11.4",
+    "grunt-contrib-concat": "~0.5.0"
+  }
+}

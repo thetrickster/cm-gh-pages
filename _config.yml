@@ -1,0 +1,16 @@
+# Site settings
+title: Chris Matthias
+email: chris.matthias@gmail.com
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+baseurl: "http://localhost/cm-gh-pages/_site"
+url: "http://localhost/cm-gh-pages/_site/"
+twitter_username: thetrickster88
+github_username:  thetrickster
+timezone: America/New_York
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Exclude Files
+exclude: ["bower_components", "node_modules", "bower.json", "Gemfile", "Gemfile.lock", "less", "Gruntfile.js", "package.json", "README.md", "js/app-compiles.js", "js/app.js"]
