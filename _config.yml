@@ -9,7 +9,7 @@ github_username:  thetrickster
 timezone: America/New_York
 
 # Build settings
-destination: ../local-chrismatthias-com
+#destination: ../local-chrismatthias-com
 markdown: kramdown
 permalink: /:categories/:title/
 
