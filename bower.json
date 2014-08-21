@@ -20,6 +20,9 @@
     "tests"
   ],
   "devDependencies": {
-    "uikit": "~2.8.0"
+    "uikit": "~2.8.0",
+    "animate.css": "~3.2.0",
+    "snap.svg": "~0.3.0",
+    "modernizr": "~2.8.3"
   }
 }

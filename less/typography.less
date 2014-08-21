@@ -1,0 +1,20 @@
+// Typography
+.all-headings {
+  line-height: @line-height;
+  
+}
+
+.subheading {
+  &:extend(.all-headings all);
+  font-family: @font-condensed; 
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.heading {
+  &:extend(.all-headings all);
+  font-family: @font-serif;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: @primary-color;
+
+}

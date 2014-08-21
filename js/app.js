@@ -1,3 +1,18 @@
 // App Javascript
 
-console.log("Test");
+(function($){
+
+  function _init() {
+    $.fn.animateBreathing();
+    $("[data-email-link]").emailLink();
+    // $.fn.svgLogo();
+
+  }
+
+  $(document).ready(function() {
+
+    _init();
+
+  });
+
+})(jQuery);

@@ -1,0 +1,121 @@
+// Keyframes
+@-webkit-keyframes breathe {
+  0% {
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+
+  20% {
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(-30px) scale(1.08);
+    opacity: 0.3;
+  }
+}
+
+@-moz-keyframes breathe {
+  0% {
+    -moz-transform: translateY(0px);
+    opacity: 1;
+  }
+
+  20% {
+    -moz-transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: translateY(-30px) scale(1.08);
+    opacity: 0.3;
+  }
+}
+
+@-ms-keyframes breathe {
+  0% {
+    -ms-transform: translateY(0px);
+    opacity: 1;
+  }
+
+  20% {
+    -ms-transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    -ms-transform: translateY(-30px) scale(1.08);
+    opacity: 0.3;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-30px) scale(1.08);
+    opacity: 0.3;
+  }
+}
+
+
+
+// Animations
+
+// Pause animations on hover
+.pause-hover {
+
+  &:hover {
+    -webkit-animation-play-state: paused;
+       -moz-animation-play-state: paused;
+        -ms-animation-play-state: paused;
+         -o-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+}
+
+
+// Inhale/Breathing
+/* Breathing buttons from http://www.aquatilis.tv */
+
+.inhale {
+  -webkit-transition: opacity 1600ms linear 0ms;
+     -moz-transition: opacity 1600ms linear 0ms;
+      -ms-transition: opacity 1600ms linear 0ms;
+       -o-transition: opacity 1600ms linear 0ms;
+          transition: opacity 1600ms linear 0ms;
+  -webkit-animation-timing-function: cubic-bezier(0.81, 0.08, 0.43, 0.88);
+     -moz-animation-timing-function: cubic-bezier(0.81, 0.08, 0.43, 0.88);
+      -ms-animation-timing-function: cubic-bezier(0.81, 0.08, 0.43, 0.88);
+       -o-animation-timing-function: cubic-bezier(0.81, 0.08, 0.43, 0.88);
+          animation-timing-function: cubic-bezier(0.81, 0.08, 0.43, 0.88);
+  -webkit-animation: breathe 3s alternate infinite;
+     -moz-animation: breathe 3s alternate infinite;
+      -ms-animation: breathe 3s alternate infinite;
+       -o-animation: breathe 3s alternate infinite;
+          animation: breathe 3s alternate infinite;  
+          opacity: 0;
+          visibility: hidden;
+  // position: absolute;
+  // z-index: 100;
+  // left: 50%;
+  // margin-left: -61px;
+  // bottom: 120px;
+  // cursor: pointer;
+}
+.inhale.active {
+  opacity: 1;
+  visibility: visible;
+}
+.inhale.animate {
+
+}

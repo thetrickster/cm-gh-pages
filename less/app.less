@@ -1,5 +1,170 @@
 // App Stylesheet
 
-@import "bower_components/uikit/src/less/uikit.less";
+@import "uikit/src/less/uikit.less";
+@import (less) "animate.css/animate.css";
 
-body { background: gray; }
+/*** VARIABLES ***/
+
+// Colors
+@primary-color: #0099CC;
+@color-gray: #CCCCCC;
+@color-blue: @primary-color;
+@color-dark: #000000;
+@color-light: #FFFFFF;
+
+
+// Widths
+@width-logo: 500px;
+
+// Margins
+  // H1s
+  @margin-h1-top: 25px;
+  @margin-default: 1.5rem;
+  @margin-large: (@margin-default * 2);
+
+@line-height: 1.2;
+
+
+
+
+
+// Import Fonts
+@import "fonts.less";
+
+
+// Import other less files
+@import "layout.less";
+@import "grid.less";
+@import "typography.less";
+@import "sections.less";
+@import "animations.less";
+@import "footer.less";
+
+html, body { 
+  @media (min-width: @breakpoint-medium) { height: 100%; }
+}
+html {
+  background: @color-light;
+}
+body { 
+  background: @primary-color;
+  background-size: cover;
+  background-attachment: fixed; 
+  font-family: @font-serif;
+
+
+  // @media (min-width: 1px) { background-image: url('../img/bluebg-phone.jpg'); }
+                @media (min-width: 1px) { background-image: url('../img/bluebg-tablet.jpg'); }
+  @media (min-width: @breakpoint-large) { background-image: url('../img/bluebg.jpg'); }
+}
+
+a, a:hover { color: @primary-color; }
+
+.body-inner {
+  padding: 5px;
+  font-size: initial;
+  height: inherit;
+
+  @media (min-width: @breakpoint-small) { padding: 10px; }
+
+}
+
+// Logo
+.logo, 
+#logo-replace, 
+#logo-replace svg { 
+  display: block;
+  margin: (@margin-h1-top) auto (-@margin-h1-top - 10);
+  width: 62%; 
+  max-width: 190px; 
+
+  @media (min-width: @breakpoint-small) {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  @media (min-width: @breakpoint-medium) {
+    margin: (@margin-h1-top + 10) auto (-@margin-h1-top - 10);
+    width: 100%;
+    max-width: @width-logo; 
+    
+  }
+}
+
+
+
+// Scroll Down Button
+.down-button {
+  &:extend(.uk-vertical-align all);
+  &:extend(.inhale all);
+  &:extend(.pause-hover all);
+  &:active, &:focus {
+    outline: none;
+  }
+
+
+  position: static;
+  display: block;
+  margin: (@margin-default * 2) auto;
+
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px solid @primary-color;
+  background: transparent;
+  color: @primary-color;
+
+  &:hover { 
+    color: @color-light; 
+    border-color: @color-light;
+  }
+
+  &:after {
+    &:extend(.uk-vertical-align-middle all);
+
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-size: 3rem;
+  }
+
+  @media (min-width: @breakpoint-medium) {
+    position: absolute;
+    bottom: 3rem;
+    margin-left: -35px;
+    left: 50%;
+    margin-right: initial;
+    margin-bottom: 0;
+
+
+  }
+
+}
+
+// Hero
+  // Tagline
+  .tagline {
+    font-family: @font-sans;
+    font-size: 1.3rem;
+    line-height: @line-height;
+    font-weight: 200;
+    padding: @margin-default 0;
+
+    .title:extend(.heading all) {
+      font-size: 1.35rem;
+
+      @media (min-width: @breakpoint-small) { font-size: 1.8rem; }
+      @media (min-width: @breakpoint-large) { font-size: 2.3rem; }
+      @media (min-width: @breakpoint-xlarge) { font-size: 2.7rem; }
+      
+    }
+
+    @media (min-width: @breakpoint-small) {
+      font-size: 1.8rem;
+      padding: (@margin-large * 2) 0;
+    }   
+  }
+
+
+
+
