@@ -14,6 +14,6 @@ markdown: kramdown
 permalink: /:categories/:title/
 
 # Exclude Files
-exclude: ["bower_components", "node_modules", "bower.json", "Gemfile", "Gemfile.lock", "less", "Gruntfile.js", "package.json", "README.md", "js/app-compiles.js", "js/app.js"]
+exclude: ["CNAME", "bower_components", "node_modules", "bower.json", "Gemfile", "Gemfile.lock", "less", "Gruntfile.js", "package.json", "README.md", "js/lib", "js/modernizr.js", "js/app-compiled.js", "js/app.js"]
 # Include files from root
 include: ["favicion.*", "apple-touch-icon-*"]
